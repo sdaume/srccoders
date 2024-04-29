@@ -125,6 +125,13 @@ https://sdaume.github.io/srccoders/rmarkdown_presentations.html?presentme=true
 
 Check the R Markdown book [@XieAllaire_et_2023_BOOK] for more features such as incremental display of content, custom CSS, templates etc.
 
+<div class="notes">
+This is my *note*.
+
+- It can contain markdown
+- like this list
+</div>
+
 
 ## Online presentations
 
@@ -155,5 +162,10 @@ The referenced example creates a HTML presentation based on the [reveal.js](http
 It is versatile, offers different plugins and makes it possible to include advanced visualizations such as [this](https://sdaume.github.io/src-short-presentations/20210614_covid19_topics.html#/connected-topics)
 
 
+# The end
+
+## Code examples
+
+The `Rmd` file for this presentation is here: https://github.com/sdaume/srccoders
 
 ## References
