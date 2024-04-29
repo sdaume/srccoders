@@ -3,12 +3,12 @@ title: "Presentations with R Markdown"
 subtitle: "Some examples"
 author: Stefan Daume
 date: "`r Sys.Date()`"
-#output:
-#  ioslides_presentation:
-#    widescreen: true
-output: 
-  bookdown::html_document2:
-    theme: paper
+output:
+  ioslides_presentation:
+    widescreen: true
+#output: 
+#  bookdown::html_document2:
+#    theme: paper
 always_allow_html: true
 bibliography: references.bib
 link-citations: yes
@@ -119,13 +119,40 @@ Using `---` creates a slide without a title.
 
 ## Useful features
 
-Most HTML presentation output formats support useful features like **presenter mode** out of the box. 
+Most HTML presentation output formats support useful features like **presenter mode** out of the box. This presentation in presenter mode:
+
+https://sdaume.github.io/srccoders/rmarkdown_presentations.html?presentme=true
 
 Check the R Markdown book [@XieAllaire_et_2023_BOOK] for more features such as incremental display of content, custom CSS, templates etc.
 
 
 ## Online presentations
 
+The generated HTML presentation (or any HTML document) can be hosted online via GitHub pages.
+
+```{r github-pages, echo=FALSE}
+knitr::include_graphics("myimages/github_pages_screenshot.png")
+```
+
+This presentation is at: https://sdaume.github.io/srccoders/rmarkdown_presentations.html
+
+
+# Document conversion with `pandoc`
+
+## A more involved approach
+
+The 'heavy lifting' of document transformations from R Markdown is enabled with `pandoc` (https://pandoc.org/). 
+
+Using `pandoc` may offer useful additional options when converting documents. 
+
+An alternative approach to creating presentations from R Markdown and using `pandoc` directly is documented here: https://github.com/sdaume/rmarkdown-presentation-template (slightly outdated now)
+
+
+## R Markdown, pandoc, reveal.js
+
+The referenced example creates a HTML presentation based on the [reveal.js](https://revealjs.com/) framework, starting with R Markdown it uses `pandoc` to create presentations like [this](https://sdaume.github.io/rmarkdown-presentation-template/#/section-1).
+
+It is versatile, offers different plugins and makes it possible to include advanced visualizations such as [this](https://sdaume.github.io/src-short-presentations/20210614_covid19_topics.html#/connected-topics)
 
 
 
